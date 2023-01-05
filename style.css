@@ -1,12 +1,47 @@
-    body{
-        background:linear-gradient(45deg, rgb(0, 102, 255),white,cyan);
-
-        align-items: center;
-        background-repeat: no-repeat;
-        padding: 10px;
-     
-        
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
+    
+    
+ 
+.navbar {
+background: rgba(0, 0, 0, 0.945);
+height:80px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.1rem;
+position:sticky;
+top:0;
+z-index:5;
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width:100%;
+    max-width:1280px;
+    margin:0 auto;
+    padding: 0 50px;
+}
+#navbar_logo {
+    background-color: blanchedalmond;
+    background-image: linear-gradient(to top, blue,white, red);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
 .btn{
     background:linear-gradient(45deg, rgb(0, 102, 255),white,cyan);
     color: black;
@@ -15,6 +50,7 @@
     border:  solid 2px black;
     border-radius: 15px;
 }
+
 .btn:hover{
     background:linear-gradient(lightblue,rgb(0, 153, 255)) ;
     color: black;
@@ -22,3 +58,46 @@
    border-radius: 15px;
    transition: .5s;
 }
+
+.fa-gem {
+    margin-right:.5rem;
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style:none;
+    text-align: center;
+    
+}
+
+.navbar_item {
+    height:85px;
+
+}
+
+.navbar_links {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
