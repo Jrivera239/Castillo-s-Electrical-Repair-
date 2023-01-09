@@ -447,13 +447,53 @@ z-index:5;
     
 }
 
+.services_card button {
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #0314ff;
+    position: absolute;
+    top:440px;
+    left:30px;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.services_card:hover {
+    transform: scale(1.05);
+    transition: .2s ease-in;
+}
+
+@media screen and (max-width:960px) {
+    .serices {
+        height:1600px;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .services {
+        height: 1400px;
+    }
+
+    .services h1 {
+        font-size: 1.2rem;
+    }
+
+    .services_card {
+        width: 300px;
+    }
+}
 
 
 
-
-
-
-
+/* footer */
 
 
 
