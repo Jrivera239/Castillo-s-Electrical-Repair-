@@ -119,9 +119,9 @@ z-index:5;
     color: white
 }
 .button:hover {
-    color:rgba(48, 48, 255, 0.938);
-    background-color: white;
-    border: solid 1px rgb(64, 128, 248);
+    color:white;
+    background:#ff4949 ;;
+    border: solid 1px rgb(255, 255, 255);
     transition: all .4s ease;
 }
 
@@ -222,12 +222,7 @@ z-index:5;
     transform: translateY(-8px) rotate(-45deg);
 }
 
-.main_btn{
-    font-size: 20px;
-    text-shadow: rgb(255, 255, 255) .5px .5px ;
-    background-color: #121313;
-    border: none;
-}
+
 }
 .main{
     background-color: #121313;
@@ -248,21 +243,83 @@ z-index:5;
 .main_content h1{
     font-size: 4rem;
     background-color: #202222;
-    background-image: linear-gradient(to top,#0314ff 0%,white, rgb(255, 25, 0) 100%);
+    background-image: linear-gradient(to bottom,red 0%,white 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color:transparent;
+}
+.main_content h2{
+    font-size: 3rem;
+    background-color: #202222;
+    background-image: linear-gradient(to bottom,white 0%,white,  blue 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.main_content p{
+    font-size: 2rem;
+    background-color: #202222;
+    background-image: linear-gradient(to top,#0314ff 20%,white 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.main_btn {
+    font-size: 1rem;
+    background-color: #999ffd;
+    border: none;
+    text-decoration: none;
+    padding:13px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: .35s all;
+    outline:none;
+    background: rgba(48, 48, 255, 0.938);
 
 }
 
+.main_btn a{
+    position: relative;
+    z-index:2;
+    color: white;
+    text-decoration: none;
 
+}
 
+.main_btn:after {
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    width:0;
+    height: 100%;
+    background:#ff4949 ;
+    transition:  .4s all;
+    border-radius: 5px;
+  
+    
+}
 
+.main_btn:hover{
+    color: white;
+}
+.main_btn:hover:after {
+    width: 100%;
+}
 
+.main_img-container{
+    text-align: center;
 
-
+}
 
 
 
