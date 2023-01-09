@@ -3,10 +3,13 @@
         margin:0;
         padding:0;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: rgba(192, 217, 255, 0.822);
+        color: rgba(244, 255, 243, 0.822);
+      
     }
     
-    
+    body{
+        background-color: #121313;
+    }
  
 .navbar {
 background: rgba(0, 0, 0, 0.945);
@@ -321,17 +324,128 @@ z-index:5;
 
 }
 
+#main_img {
+    height: 80%;
+    width: 80%;
+}
+
+@media screen and (max-width:768px) {
+    .main_container {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width:100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+
+    .main_content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main_content h1 {
+        font-size: 2.3rem;
+        margin-top: 2rem;
+    }
+.main_container h2 {
+    font-size: 3rem;
+}
+.main_container p {
+    margin-top: 1em;
+    font-size: 1.5rem;
+}
+}
+@media screen and (max-width: 480px) {
+.main_content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    }
+.main_container h2 {
+    font-size: 2rem;
+}
+.main_container p {
+    margin-top: 2em;
+    font-size: 1.5rem;
+
+}
+.main_btn {
+    padding: 12p 35px;
+    margin: 2.5rem 0;
+}
+}
 
 
+.services {
+    background: #121313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
 
+.services h1 {
+    background-color: rgb(255, 121, 59);
+    background-image:linear-gradient(to right,
+     red 0%,
+     rgb(250, 60, 60)20%,
+     rgb(250, 119, 119)30% ,
+     rgb(255, 207, 207)40%,
+     white 50%,
+     rgb(70, 70, 253), 85%,
+    blue 100%) ;
+    color: black;
+    font-size: 2.2rem;
+    background-size: 100%;
+    margin-bottom: 4rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
 
+.services_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.services_card {
+    margin: 1rem;
+    height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom,
+    rgb(0, 0, 0) 0%,
+    rgba(17, 17, 17,0.5)),
+    url('/images/images/me2.jpg');
+    background-size:cover;
+    position: relative;
+    color: white;
 
+}
 
+.services_card:nth-child(2) {
+    background-image: linear-gradient(to bottom,
+    rgb(0, 0, 0) 0%,
+    rgba(17, 17, 17,0.5)),
+    url('/images/images/mec.jpg');
 
+}
 
-
-
+.serice h2 {
+    position:absolute;
+    top:350px;
+    left: 35px;
+   
+}
+.service_card p {
+    position: absolute;
+    top:400px;
+    left:30px;
+    
+}
 
 
 
